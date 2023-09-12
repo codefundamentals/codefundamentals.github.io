@@ -389,6 +389,28 @@ h6 {
   display: block;
 }
 
+/* course button */
+
+.btn-course{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: 0.5s;
+  padding: 14px 50px;
+  margin-top: 15px;
+  color: #fff;
+  background: #2487ce;
+}
+
+.btn-course:hover {
+  background: #3194db;
+  color: #fff !important;
+}
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -430,7 +452,7 @@ h6 {
   font-size: 22px;
 }
 
-#hero .btn-get-started {
+#hero .btn-get-started{
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
