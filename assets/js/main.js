@@ -1,13 +1,13 @@
 /**
-* Template Name: Baker
+* Template Name: OnePage
 * Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
+* Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
 (function() {
   "use strict";
-  
+
   /**
    * Easy selector helper function
    */
@@ -67,10 +67,6 @@
   const scrollto = (el) => {
     let header = select('#header')
     let offset = header.offsetHeight
-
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 10
-    }
 
     let elementPos = select(el).offsetTop
     window.scrollTo({
@@ -160,6 +156,23 @@
   });
 
   /**
+   * Preloader
+   */
+  let preloader = select('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove()
+    });
+  }
+
+  /**
+   * Initiate glightbox 
+   */
+  const glightbox = GLightbox({
+    selector: '.glightbox'
+  });
+
+  /**
    * Testimonials slider
    */
   new Swiper('.testimonials-slider', {
@@ -195,8 +208,7 @@
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+        itemSelector: '.portfolio-item'
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
@@ -211,7 +223,9 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-
+        portfolioIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
       }, true);
     }
 
@@ -222,15 +236,6 @@
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Initiate portfolio details lightbox 
-   */
-  const portfolioDetailsLightbox = GLightbox({
-    selector: '.portfolio-details-lightbox',
-    width: '90%',
-    height: '90vh'
   });
 
   /**
@@ -248,6 +253,18 @@
       type: 'bullets',
       clickable: true
     }
+  });
+
+  /**
+   * Animation on scroll
+   */
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
   });
 
   /**
