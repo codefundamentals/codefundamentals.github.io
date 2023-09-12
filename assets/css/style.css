@@ -199,6 +199,8 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #2487ce;
+  transform: scale(1.1);
+  transition: transform 300ms ease-in-out;
 }
 
 .navbar .getstarted,
