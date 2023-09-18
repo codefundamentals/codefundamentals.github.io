@@ -36,6 +36,11 @@
       color: #fff;
     }
 
+    .list-group-item:hover:not(.active) {
+      background-color: #f4f8fc;
+      color: #16507b;
+    }
+
     .list-group-item:first-child {
       border-top-left-radius: unset;
       border-top-right-radius: unset;
@@ -107,80 +112,6 @@
       <div class="container">
 
         <div class="row gy-4">
-
-          <!-- <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
-            
-            <div class="faq-list">
-              <ul>
-                <li data-aos="fade-up">
-                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                    data-bs-target="#faq-list-1">Who can enroll in these courses? <i
-                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                    <p>
-                      Our courses cater to a wide range of learners, from beginners to experienced individuals looking to
-                      enhance their Python and Data Science skills. There are no specific prerequisites for Python 01:
-                      Fundamentals of Python, making it accessible to anyone interested in learning. Python 02: Python for
-                      Data Science is designed for those who have completed Python 01 or have prior Python knowledge.
-                    </p>
-                  </div>
-                </li>
-    
-                <li data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
-                    class="collapsed">Is there any certification upon course completion?<i
-                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                    <p>
-                      Yes, we offer a certificate of completion for both Python 01 and Python 02 courses. These certificates
-                      can be a valuable addition to your resume or portfolio.
-                    </p>
-                  </div>
-                </li>
-    
-                <li data-aos="fade-up" data-aos-delay="200">
-                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
-                    class="collapsed">How can I get more information or clarify doubts before enrolling? <i
-                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                    <p>
-                      Feel free to reach out to our support team at waqasghani13@gmail.com. We're here to assist you with
-                      any questions or concerns you may have before you start your learning journey with us.
-                    </p>
-                  </div>
-                </li>
-    
-                <li data-aos="fade-up" data-aos-delay="300">
-                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
-                    class="collapsed">What happens if I miss a live session in the Premium plan? <i
-                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                    <p>
-                      Don't worry! If you miss a live session in the Premium plan, recordings of the sessions will be made
-                      available for you to catch up at your convenience. You won't miss out on any valuable content
-                    </p>
-                  </div>
-                </li>
-    
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="100">
-            
-            <iframe
-              src="https://docs.google.com/presentation/d/e/2PACX-1vS_l2mh7wu2MbvL8krev5rhDB-XpYwMelcDaOd-C8ILubV9XJAL-CVcO8nqaOIpUkTWr8tf0GviaN1_/embed?start=false&loop=false&delayms=3000"
-              frameborder="0" class="w-100 h-100" allowfullscreen="true" mozallowfullscreen="true"
-              webkitallowfullscreen="true"></iframe>
-          </div> -->
-
-          <!-- <div class="col-md-3 bg-light">
-            <ul class="list-group">
-              <li class="list-group-item active" onclick="showSlide(1)">Content 1</li>
-              <li class="list-group-item" onclick="showSlide(2)">Content 2</li>
-            </ul>
-          </div> -->
           <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
@@ -221,6 +152,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-md-8" data-aos="fade-left" data-aos-delay="100">
             <div class="slide" id="slide1">
               <h2>Slide 1</h2>
