@@ -1050,7 +1050,7 @@ section {
   border: 0;
   padding: 12px 15px 12px 0;
   transition: 0.3s;
-  color: #37423b;
+  color: #124265;
   border-radius: 0;
   border-right: 2px solid #e2e7e4;
   font-weight: 600;
@@ -1058,12 +1058,12 @@ section {
 }
 
 .cource-details-tabs .nav-link:hover {
-  color: #5fcf80;
+  color: #2487ce;
 }
 
 .cource-details-tabs .nav-link.active {
-  color: #5fcf80;
-  border-color: #5fcf80;
+  color: #2487ce;
+  border-color: #2487ce;
 }
 
 .cource-details-tabs .tab-pane.active {
@@ -1074,7 +1074,7 @@ section {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #37423b;
+  color: #124265;
 }
 
 .cource-details-tabs .details p {
@@ -1093,7 +1093,7 @@ section {
 
   .cource-details-tabs .nav-link.active {
     color: #fff;
-    background: #5fcf80;
+    background: #2487ce;
   }
 }
 
