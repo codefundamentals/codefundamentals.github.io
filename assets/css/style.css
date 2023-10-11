@@ -967,6 +967,10 @@ section {
   color: #C27BA0;
 }
 
+.services .iconbox-blue:hover {
+  box-shadow: 0px 0 35px 0 rgba(194, 123, 160, 0.3);
+}
+
 .services .iconbox-blue:hover .icon i {
   color: #fff;
 }
@@ -979,6 +983,10 @@ section {
   color: #674EA7;
 }
 
+.services .iconbox-orange:hover {
+  box-shadow: 0px 0 35px 0 rgba(103, 78, 167, 0.3);
+}
+
 .services .iconbox-orange:hover .icon i {
   color: #fff;
 }
@@ -989,6 +997,10 @@ section {
 
 .services .iconbox-pink i {
   color: #D15A12;
+}
+
+.services .iconbox-pink:hover {
+  box-shadow: 0px 0 35px 0 rgba(209, 90, 18, 0.25);
 }
 
 .services .iconbox-pink:hover .icon i {
